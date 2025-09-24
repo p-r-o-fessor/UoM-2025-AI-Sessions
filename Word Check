@@ -1,0 +1,11 @@
+x = input()
+y = input()
+
+def is_subsequence(x0, y0):
+    index = 0
+    for i in y0:
+        if index < len(x0) and x0[index] == i:
+            index += 1
+    return index == len(x0)
+
+print(is_subsequence(x, y))
