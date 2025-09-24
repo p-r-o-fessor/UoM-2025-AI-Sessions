@@ -1,0 +1,10 @@
+number_A = 1
+number_B = 2
+sum = 2
+while number_A < 4000000 and number_B < 4000000:
+    number_C = number_A + number_B
+    if number_C % 2 == 0:
+        sum = sum + number_C
+    number_A = number_B
+    number_B = number_C
+print (sum)
